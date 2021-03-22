@@ -2,7 +2,7 @@ import java.lang.IllegalArgumentException
 import java.lang.RuntimeException
 import java.lang.StringBuilder
 
-private val allTerminals: List<Terminal> = arrayListOf(
+private val allTerminals: ArrayList<Terminal> = arrayListOf(
     Terminal("VAR", "[a-zA-Z_][a-zA-Z0-9_]*"),
     Terminal("TYPE", "string|int|float", 1),
     Terminal("NUM", "\\d*"),
